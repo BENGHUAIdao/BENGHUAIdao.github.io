@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>被刀</title>
+    <meta charset="utf-8">
+
+
+<video id="video" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; " autoplay muted>
+    <source src="./img/MyVideo.mp4" type="video/mp4">
+    <script>
+        window.onload = function(){
+    var video=document.getElementById("video"); //获取video
+	document.body.addEventListener('mousedown', function(){
+		video.muted = false;
+	}, false);  //点击事件，点击页面即可开启声音
+}
+myVid=document.getElementById("video");
+            myVid.addEventListener('ended',function(){
+                window.location.href="haha.html";
+            });
+</script>
+
+
+    </script>
+       
+    
+</video>
+
+</body>
+
+</html>

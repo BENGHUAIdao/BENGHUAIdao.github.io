@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>haha</title>
+    <meta charset="utf-8">
+</head>
+    <img src="./img/664bcfcf4f0160dd0105a44881c7b887384286984.jpg" alt="some_text" 
+    width="635"
+     height="735">
+     <div class="d1"><h1>点击任意处</h1></div>
+     <style>
+        .d1{
+            background-color: rgb(0, 255, 170);
+            position: absolute;
+            top:400px;
+            left:150px ;}
+
+     </style>
+<style>
+    
+img{
+	position: relative;
+	left: 25%;
+	top: 25%;
+
+}
+
+</style>
+<div id = "div01">
+<video id="video" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; " autoplay muted loop>
+    <source src="./img/hahahha.mp4" type="video/mp4">
+    <script>
+        window.onload = function(){
+    var video=document.getElementById("video"); //获取video
+	document.body.addEventListener('mousedown', function(){
+		video.muted = false;
+	}, false);  //点击事件，点击页面即可开启声音
+}
+myVid=document.getElementById("video");
+            myVid.addEventListener('ended',function(){
+                window.location.href="haha.html";
+            });
+</script>
+<style>
+ #div01{    
+        opacity:0;
+    }
+</style>
+</div>
+</body>
+
+</html>
