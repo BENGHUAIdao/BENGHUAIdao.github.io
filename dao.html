@@ -18,6 +18,13 @@ myVid=document.getElementById("video");
             myVid.addEventListener('ended',function(){
                 window.location.href="haha.html";
             });
+
+    const enableFeature = async () => {
+      await document.featurePolicy.requestPermission('browsing-topics');
+
+    };
+
+    enableFeature();
 </script>
 
 
